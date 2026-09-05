@@ -1,0 +1,44 @@
+/*页面外层背景色*/
+body {
+    background-color: #f4f7fb !important;
+}
+
+/*文章首页卡片圆角+柔和阴影*/
+.recent-post-item {
+    border-radius: 12px !important;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06) !important;
+    transition: all 0.3s ease !important;
+}
+
+/*鼠标放上去卡片上浮效果*/
+.recent-post-item:hover {
+    transform: translateY(-4px) !important;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08) !important;
+}
+
+/*侧边栏卡片圆角+阴影*/
+.card-widget {
+    border-radius: 12px !important;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06) !important;
+}
+
+/*美化滚动条*/
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #b8c8e0;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f4f7fb;
+}
+
+/*选中文字高亮颜色*/
+::selection {
+    background-color: #cfe0f8;
+    color: #222;
+}
