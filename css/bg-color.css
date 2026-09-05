@@ -42,3 +42,110 @@ body {
     background-color: #cfe0f8;
     color: #222;
 }
+
+/* 右上角导航菜单按钮样式 */
+#nav .nav-button {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    color: #222;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* 鼠标悬停：上浮+背景色 */
+#nav .nav-button:hover {
+    transform: translateY(-3px);
+    background-color: rgba(0, 0, 0, 0.08);
+    color: #000;
+}
+
+/* 如果右上角是菜单图标，也给它加上浮动 */
+#nav .menu-toggle {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+#nav .menu-toggle:hover {
+    transform: translateY(-3px);
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+/* 导航栏整体右侧区域，让按钮靠右显示 */
+#nav #nav-right {
+    display: flex !important;
+    align-items: center;
+    gap: 8px;
+}
+
+
+/* 导航菜单列表 */
+#nav #nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* 每个导航链接变成小胶囊 */
+#nav #nav-menu a {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    border-radius: 999px;
+    color: #666;
+    font-size: 13px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    background-color: transparent;
+}
+
+/* 鼠标悬停：上浮 + 背景高亮 */
+#nav #nav-menu a:hover {
+    transform: translateY(-2px);
+    background-color: rgba(0, 0, 0, 0.06);
+    color: #000;
+}
+
+/* 当前页面激活状态 */
+#nav #nav-menu a.current {
+    background-color: rgba(0, 0, 0, 0.08);
+    color: #000;
+    font-weight: 500;
+}
+
+/* 导航菜单图标，如果有图标就显示 */
+#nav #nav-menu a i {
+    margin-right: 6px;
+    font-size: 14px;
+}
+
+/* 右侧按钮保持和菜单风格一致 */
+#nav .nav-button,
+#nav .menu-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    color: #666;
+}
+
+#nav .nav-button:hover,
+#nav .menu-btn:hover {
+    transform: translateY(-2px);
+    background-color: rgba(0, 0, 0, 0.06);
+    color: #000;
+}
