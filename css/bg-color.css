@@ -1,8 +1,3 @@
-/*页面外层背景色*/
-body {
-    background-color: #f4f7fb !important;
-}
-
 /*文章首页卡片圆角+柔和阴影*/
 .recent-post-item {
     border-radius: 12px !important;
@@ -149,4 +144,3 @@ body {
     background-color: rgba(0, 0, 0, 0.06);
     color: #000;
 }
-
