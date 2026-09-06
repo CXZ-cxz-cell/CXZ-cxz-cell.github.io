@@ -1,0 +1,43 @@
+/* 友链页面背景挂载body，实现真正全屏，不会卡在底部 */
+body.page-type-link {
+    background: url("/img/preview5.jpg") center / cover no-repeat fixed !important;
+}
+
+[data-theme="dark"] body.page-type-link {
+    background: linear-gradient(135deg, #1e1e2e 0%, #2a2a3a 100%) !important;
+}
+
+/* 友链页面内容容器透明 */
+.page.type-link #article-container {
+    background: transparent !important;
+}
+
+/* 友链页头部头图及遮罩清除 */
+.page.type-link #page-header {
+    background-color: transparent !important;
+}
+
+.page.type-link #page-header::before {
+    display: none !important;
+}
+
+/* 友链页页脚透明（友链页单独生效） */
+.page.type-link #footer {
+    background: transparent !important;
+}
+
+.page.type-link #footer::before {
+    display: none !important;
+}
+
+/* flexcard友链卡片毛玻璃 */
+.flexcard-flink-list .flink-list-card {
+    background: rgba(255, 255, 255, 0.82) !important;
+    backdrop-filter: blur(10px) !important;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1) !important;
+}
+
+[data-theme="dark"] .flexcard-flink-list .flink-list-card {
+    background: rgba(255, 255, 255, 0.08) !important;
+}

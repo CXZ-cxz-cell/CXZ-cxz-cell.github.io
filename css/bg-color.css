@@ -144,3 +144,52 @@
     background-color: rgba(0, 0, 0, 0.06);
     color: #000;
 }
+
+/* ========== 全局：首页/归档/文章/友链 全部页面页脚透明 ========== */
+#footer {
+    background: transparent !important;
+}
+
+#footer::before {
+    display: none !important;
+}
+
+.footer-wrap {
+    background: transparent !important;
+}
+
+.layout>.container {
+    background: transparent !important;
+}
+
+/* ========== 仅友链页面生效：全屏背景 ========== */
+body.page-type-link {
+    background: url("/img/preview5.jpg") center / cover no-repeat fixed !important;
+}
+
+[data-theme="dark"] body.page-type-link {
+    background: linear-gradient(135deg, #1e1e2e 0%, #2a2a3a 100%) !important;
+}
+
+.page.type-link #page-header {
+    background-color: transparent !important;
+}
+
+.page.type-link #page-header::before {
+    display: none !important;
+}
+
+.page.type-link #article-container {
+    background: transparent !important;
+}
+
+.flexcard-flink-list .flink-list-card {
+    background: rgba(255, 255, 255, 0.82) !important;
+    backdrop-filter: blur(10px) !important;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1) !important;
+}
+
+[data-theme="dark"] .flexcard-flink-list .flink-list-card {
+    background: rgba(255, 255, 255, 0.08) !important;
+}
